@@ -1,0 +1,28 @@
+{
+  "firstLevelGroup": {
+    "secondLevelGroup" : {
+      "thirdLevelGroup": {
+        "fourthLevelProp": {
+          "default": "test",
+          "envVar": "CONFIG_FOURTH_LEVEL_PROP"
+        }
+      },
+      "thirdLevelProp": {
+        "default": 123,
+        "envVar": "CONFIG_THIRD_LEVEL_PROP"
+      }
+    },
+    "secondLevelProp": {
+      "default": true,
+      "envVar": "CONFIG_SECOND_LEVEL_PROP"
+    }
+  },
+  "firstLevelProp": {
+    "default": "someValue",
+    "envVar": "CONFIG_FIRST_LEVEL_PROP"
+  },
+  "anotherFirstLevelProp": {
+    "default": 456,
+    "envVar": "CONFIG_ANOTHER_FIRST_LEVEL_PROP"
+  }
+}

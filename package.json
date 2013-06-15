@@ -1,0 +1,18 @@
+{
+  "name": "config-loader",
+  "version": "0.0.0",
+  "description": "node.js config loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Tymoteusz Paszun <tpaszun@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.11.0"
+  }
+}
