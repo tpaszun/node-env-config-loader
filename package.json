@@ -1,6 +1,6 @@
 {
   "name": "env-config-loader",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Simple node.js config loader inspired by The Twelve-Factor App",
   "keywords": [
     "config",
