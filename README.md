@@ -1,8 +1,39 @@
 ## Instalation
 
+    npm install env-config-loader
+
 ## Usage
 
-    var config = require('
+### Load config specification from JSON file
+
+    var config = require('env-config-loader')('config.spec.json');
+
+### Load from config specification object
+
+    var config = require('env-config-loader')({
+      redis: {
+        host: {
+          'default': '127.0.0.1',
+          envVar: 'CONFIG_REDIS_HOST'
+        },
+        port: {
+          'default': 6739,
+          envVar: 'CONFIG_REDIS_PORT'
+        },
+        pass: {
+          'default': '',
+          envVar: 'CONFIG_REDIS_PASS'
+        }
+      },
+      cluster: {
+        'default': false,
+        envVar: 'CONFIG_CLUSTER'
+      }
+    });
+
+### Expose loaded config
+
+    module.exports = require('env-config-loader')('config.spec.json');
 
 ## License
 

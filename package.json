@@ -1,18 +1,28 @@
 {
-  "name": "config-loader",
+  "name": "env-config-loader",
   "version": "0.0.0",
-  "description": "node.js config loader",
-  "main": "index.js",
+  "description": "Simple node.js config loader inspired by The Twelve-Factor App",
+  "keywords": [
+    "config",
+    "loader",
+    "env",
+    "environment"
+  ],
+  "main": "./index",
   "scripts": {
     "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/tpaszun/node-env-config-loader"
   },
-  "author": "Tymoteusz Paszun <tpaszun@gmail.com>",
+  "author": {
+    "name": "Tymoteusz Paszun",
+    "email": "<tpaszun@gmail.com>"
+  },
   "license": "MIT",
   "devDependencies": {
     "mocha": "~1.11.0"
-  }
+  },
+  "readmeFile": "README.md"
 }
