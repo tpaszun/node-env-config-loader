@@ -4,10 +4,6 @@
 
 ## Usage
 
-### Load config specification from JSON file
-
-    var config = require('env-config-loader')('config.spec.json');
-
 ### Load from config specification object
 
     var config = require('env-config-loader')({
@@ -31,9 +27,18 @@
       }
     });
 
+### Load config specification from JSON file or JavaScript module
+
+    var configSpec = require('./config.spec.json')
+      , config = require('env-config-loader')(configSpec);
+
+or even shorter:
+
+    var config = require('env-config-loader')(require('./config.spec.json');
+
 ### Expose loaded config
 
-    module.exports = require('env-config-loader')('config.spec.json');
+    module.exports = require('env-config-loader')(configSpec);
 
 ## License
 

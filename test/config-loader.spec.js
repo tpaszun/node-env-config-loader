@@ -15,7 +15,7 @@ describe('config-loader', function() {
   });
 
   it('should load correct JSON file', function() {
-    var config = configLoader(path.join(__dirname, 'fixtures/config-spec.json'));
+    var config = configLoader(require('./fixtures/config-spec.json'));
 
     expect(config).to.deep.equal({
       firstLevelGroup: {
