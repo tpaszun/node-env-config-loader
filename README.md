@@ -1,6 +1,6 @@
 ## Instalation
 
-    npm install env-config-loader
+    npm install env-config-loader --save
 
 ## Usage
 
